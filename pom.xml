@@ -27,6 +27,11 @@
                 <configuration>
                     <instructions>
                         <Private-Package>org.bouncycastle.*</Private-Package>
+                        <Import-Package>
+                          sun.java2d.cmm;resolution:=optional,
+                          sun.java2d.cmm.*;resolution:=optional,
+                          *
+                        </Import-Package>
                         <Embed-Dependency>
                             pdfbox,
                             fontbox
